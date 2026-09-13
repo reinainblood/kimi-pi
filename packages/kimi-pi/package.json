@@ -1,0 +1,39 @@
+{
+	"name": "@reinainblood/kimi-pi",
+	"version": "0.1.0",
+	"description": "Kimi-focused Pi distribution with persistent resource accounting and output-limit recovery",
+	"type": "module",
+	"bin": {
+		"kimi-pi": "bin/kimi-pi.js"
+	},
+	"pi": {
+		"extensions": [
+			"./src/resource-ledger.ts"
+		]
+	},
+	"scripts": {
+		"clean": "echo 'nothing to clean'",
+		"build": "echo 'nothing to build'",
+		"check": "tsgo --noEmit"
+	},
+	"keywords": [
+		"pi-package",
+		"kimi",
+		"coding-agent",
+		"resource-accounting"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/reinainblood/kimi-pi.git",
+		"directory": "packages/kimi-pi"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"typebox": "*"
+	},
+	"engines": {
+		"node": ">=22.19.0"
+	}
+}
